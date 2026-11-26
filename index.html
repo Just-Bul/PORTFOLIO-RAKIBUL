@@ -3,184 +3,202 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Rakibul Islam | Builder, teacher, designer</title>
 <meta name="description" content="Rakibul Islam is a CSE graduate and ATL Facilitator who builds AI, mobile and web products and teaches robotics to students in Assam, India.">
-<meta name="theme-color" content="#14110f">
+<meta name="theme-color" content="#0c0b0a">
 <meta property="og:title" content="Rakibul Islam | Builder, teacher, designer">
 <meta property="og:description" content="AI, mobile and web projects. Robotics teaching. Graphic design.">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/outfit.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" class="sr" aria-hidden="true" focusable="false">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 10v9.5h13V10"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20c.8-4 3.8-6 7.5-6s6.7 2 7.5 6"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-case" viewBox="0 0 24 24"><rect x="3.5" y="7.5" width="17" height="12" rx="2"/><path d="M9 7.5V6a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 6v1.5M3.5 13h17"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5ZM12 6.5v13"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-ne" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
 
 <div class="wrap">
   <header class="tile brand">
-    <a class="brand-mark" href="#home" aria-label="Rakibul Islam, home"><span class="logo" aria-hidden="true">RI</span><span>Rakibul Islam</span></a>
-    <span class="brand-tag">Builder by curiosity. Teacher by habit.</span>
-    <a class="btn btn-sm" href="#contact">Say hello</a>
+    <a class="brand-mark" href="#home" aria-label="Rakibul Islam, home"><span class="logo" aria-hidden="true">RI</span></a>
+    <span class="brand-tag">Curious by nature. Teacher by habit.</span>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch between dark and light theme"><svg class="ic"><use href="#i-sun"/></svg></button>
   </header>
 
   <main id="main">
-    <section class="tile hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">CSE graduate &middot; ATL Facilitator</p>
-        <h1>Turning <em>curiosity</em> into things that work.</h1>
-        <p class="lead">I&rsquo;m Rakibul. I build AI, mobile and web products, and I teach students to build robots with Arduino and sensors.</p>
-        <div class="actions">
-          <a class="btn" href="#projects">View work</a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    <div class="row r1" id="home">
+      <section class="tile hero" aria-labelledby="hero-h">
+        <h1 id="hero-h">Turning curiosity into things that work.</h1>
+        <div class="hero-intro">
+          <img class="avatar" src="assets/rakibul-2.png" width="1050" height="1400" alt="Rakibul Islam">
+          <p>I&rsquo;m Rakibul, a CSE graduate and ATL Facilitator. I build AI, mobile and web products, and I teach students to build robots.</p>
         </div>
+        <a class="hero-cta" href="#projects"><span>View work</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      </section>
+
+      <div class="col">
+        <section class="tile game" aria-labelledby="game-h">
+          <h2 id="game-h">For the tinkerers.</h2>
+          <canvas id="cv" width="640" height="320" role="img" aria-label="Circuit Catch game: slide the board to catch amber signals and dodge red shorts"></canvas>
+          <div class="game-bar">
+            <p class="stat"><b id="sc">0</b><span>Score</span></p>
+            <button class="pill" id="play" type="button">Play</button>
+            <p class="stat"><b id="lv">3</b><span>Lives</span></p>
+          </div>
+          <p class="hint">Mouse, finger or arrow keys. Catch amber signals, dodge red shorts.</p>
+        </section>
+        <section class="tile map" aria-label="Location">
+          <p class="eyebrow">Based in India</p>
+          <span class="pulse" aria-hidden="true"></span>
+          <div class="map-foot"><p class="big">Guwahati</p><p class="muted">Assam &middot; ATL Facilitator, JNV Chirang</p></div>
+        </section>
       </div>
-      <figure class="hero-photo">
-        <img src="assets/rakibul-1.png" width="1050" height="1400" alt="Portrait of Rakibul Islam" fetchpriority="high">
-      </figure>
-    </section>
-
-    <div class="stack">
-      <section class="tile now" aria-label="Current role">
-      <p class="eyebrow">Right now</p>
-      <h2>Teaching robotics at JNV Chirang</h2>
-      <p>ATL Facilitator under NITI Aayog&rsquo;s Atal Tinkering Labs, helping students turn ideas into working circuits.</p>
-      <ul class="chips"><li>Arduino</li><li>Sensors</li><li>STEM</li></ul>
-      </section>
-
-      <section class="tile place" aria-label="Location">
-      <div><p class="eyebrow">Based in</p><p class="big">Guwahati, Assam</p></div>
-      </section>
-
     </div>
 
-    <section class="tile game" aria-labelledby="game-h">
-      <div class="game-head">
-        <h2 id="game-h">For the tinkerers.</h2>
-        <p class="score" aria-live="polite">Score <b id="sc">0</b> &middot; Lives <b id="lv">3</b></p>
+    <div class="row r2" id="projects">
+      <section class="tile featured" aria-labelledby="feat-h">
+        <p class="eyebrow">Featured project</p>
+        <div class="feat-body">
+          <h2 id="feat-h">KRISHX</h2>
+          <p>An AI farming assistant. It recommends crops and fertilizer with a Random Forest model and detects pests from leaf photos using EfficientNetB4 transfer learning.</p>
+          <a class="pill pill-outline" href="https://github.com/Just-Bul/KRISHHX" target="_blank" rel="noopener noreferrer">View project <svg class="ic"><use href="#i-ne"/></svg><span class="sr">(opens in a new tab)</span></a>
+        </div>
+        <p class="eyebrow">Flask &middot; React &middot; React Native &middot; TensorFlow</p>
+      </section>
+      <div class="side">
+        <a class="tile mini mini-sun" href="https://reportude.in" target="_blank" rel="noopener noreferrer">
+          <p class="eyebrow">AI &middot; SaaS</p><h3>Reportude</h3>
+          <p>AI-powered reports with accounts, subscriptions, token-based usage and an admin dashboard.</p>
+          <svg class="ic corner"><use href="#i-ne"/></svg><span class="sr">(opens in a new tab)</span>
+        </a>
+        <a class="tile mini mini-sky" href="https://github.com/Just-Bul/GEO-CAM" target="_blank" rel="noopener noreferrer">
+          <p class="eyebrow">React Native &middot; Android</p><h3>GEO-CAM</h3>
+          <p>A GPS camera that burns place, address, coordinates, date, time and map into every photo. Works offline.</p>
+          <svg class="ic corner"><use href="#i-ne"/></svg><span class="sr">(opens in a new tab)</span>
+        </a>
       </div>
-      <canvas id="cv" width="640" height="360" role="img" aria-label="Circuit Catch game: slide the board to catch amber signals and dodge red shorts"></canvas>
-      <p class="muted small">Slide the board with your mouse, finger or arrow keys. Catch amber signals, dodge red shorts. <button class="btn btn-sm" id="play" type="button">Play</button></p>
-    </section>
+    </div>
 
-    <section class="projects" id="projects" aria-labelledby="projects-h">
-      <h2 id="projects-h" class="sr">Featured projects</h2>
-      <div class="section-head">
-        <p class="eyebrow">Selected work</p>
-        <p class="muted">Three things I&rsquo;ve shipped. Code is open where it can be.</p>
-      </div>
-      <div class="grid3">
-        <article class="tile card" data-tone="leaf">
-          <p class="tag">AI &middot; Agriculture</p>
-          <h3>KRISHX</h3>
-          <p>An AI farming assistant. It recommends crops and fertilizer with a Random Forest model and detects pests from photos using EfficientNetB4 transfer learning.</p>
-          <ul class="chips"><li>Flask</li><li>React</li><li>React Native</li><li>TensorFlow</li></ul>
-          <a class="link" href="https://github.com/Just-Bul/KRISHHX" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">&nearr;</span><span class="sr"> (opens in a new tab)</span></a>
-        </article>
-        <article class="tile card" data-tone="sun">
-          <p class="tag">AI &middot; SaaS</p>
-          <h3>Reportude</h3>
-          <p>An AI-powered reporting app with intelligent analysis, user accounts, subscriptions, a token-based usage system and an admin dashboard.</p>
-          <ul class="chips"><li>AI integration</li><li>Auth</li><li>Subscriptions</li><li>Admin</li></ul>
-          <a class="link" href="https://reportude.in" target="_blank" rel="noopener noreferrer">Visit reportude.in <span aria-hidden="true">&nearr;</span><span class="sr"> (opens in a new tab)</span></a>
-        </article>
-        <article class="tile card" data-tone="sky">
-          <p class="tag">Mobile &middot; Android</p>
-          <h3>GEO-CAM</h3>
-          <p>A GPS camera app. Photos and videos get a location stamp burned in: place, address, coordinates, date, time and map. No login, works offline.</p>
-          <ul class="chips"><li>React Native</li><li>Expo</li><li>TypeScript</li></ul>
-          <a class="link" href="https://github.com/Just-Bul/GEO-CAM" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">&nearr;</span><span class="sr"> (opens in a new tab)</span></a>
-        </article>
-      </div>
-    </section>
+    <a class="tile explore" href="https://github.com/Just-Bul?tab=repositories" target="_blank" rel="noopener noreferrer"><span>Explore the work</span><svg class="ic"><use href="#i-ne"/></svg><span class="sr">(opens in a new tab)</span></a>
 
-    <section class="tile about" id="about" aria-labelledby="about-h">
-      <figure class="about-photo"><img src="assets/rakibul-2.png" width="1050" height="1400" alt="Rakibul Islam smiling in a casual jacket" loading="lazy"></figure>
-      <div class="about-copy">
-        <p class="eyebrow">About</p>
-        <h2 id="about-h">Engineer by degree. Maker by instinct.</h2>
-        <p>I studied computer science, first a diploma, then a B.Tech, and I&rsquo;ve kept learning wherever the problem is interesting: machine learning, mobile apps, cybersecurity, geo-data and design.</p>
-        <p>Today I spend my days in a tinkering lab, guiding students through hands-on robotics. Teaching keeps me honest. If I can&rsquo;t explain it simply, I haven&rsquo;t understood it yet.</p>
-        <ul class="facts">
-          <li><strong>3</strong><span>products built</span></li>
-          <li><strong>6 mo</strong><span>design internship</span></li>
-          <li><strong>2</strong><span>CSE qualifications</span></li>
-        </ul>
-      </div>
-    </section>
+    <div class="row r3">
+      <section class="tile about" id="about" aria-labelledby="about-h">
+        <h2 id="about-h">Engineer by degree.<br>Maker by instinct.</h2>
+        <div class="about-cols">
+          <p>I studied computer science, first a diploma and then a B.Tech, and I follow the interesting problem wherever it goes: machine learning, mobile apps, cybersecurity, geo-data and design.</p>
+          <p>Today I spend my days in a tinkering lab with students. Teaching keeps me honest: if I can&rsquo;t explain it simply, I haven&rsquo;t understood it yet.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="What I do">
+          <button role="tab" id="t-build" aria-controls="p-build" aria-selected="true" type="button">Build</button>
+          <button role="tab" id="t-teach" aria-controls="p-teach" aria-selected="false" tabindex="-1" type="button">Teach</button>
+          <button role="tab" id="t-design" aria-controls="p-design" aria-selected="false" tabindex="-1" type="button">Design</button>
+        </div>
+        <div class="panel" role="tabpanel" id="p-build" aria-labelledby="t-build">
+          <h3>Software that solves a real problem.</h3>
+          <p>From a crop-and-pest assistant to an offline GPS camera, I like products where the engineering gets out of the way. Python and Flask on the back, React and React Native up front.</p>
+        </div>
+        <div class="panel" role="tabpanel" id="p-teach" aria-labelledby="t-teach" hidden>
+          <h3>Close to the circuit. Close to the student.</h3>
+          <p>As an ATL Facilitator I run robotics and electronics sessions with Arduino, sensors and microcontrollers, and push students to ship a working project.</p>
+        </div>
+        <div class="panel" role="tabpanel" id="p-design" aria-labelledby="t-design" hidden>
+          <h3>Posters, banners and logos.</h3>
+          <p>A six-month design and digital-marketing internship, plus freelance work, taught me to treat layout, colour and type with the same care as code.</p>
+        </div>
+      </section>
 
-    <section class="tile exp" id="experience" aria-labelledby="exp-h">
-      <header class="exp-intro">
-        <p class="eyebrow">Experience</p>
+      <section class="tile exp" id="experience" aria-labelledby="exp-h">
         <h2 id="exp-h">Classroom, studio and code.</h2>
-        <p class="muted">Three different rooms, one habit: make something real and show how it works.</p>
-      </header>
-      <ol class="roles">
-        <li>
-          <span class="when">Jul 2026 &ndash; present</span>
-          <h3>ATL Facilitator <small>JNV Chirang &middot; NITI Aayog</small></h3>
-          <p>Run hands-on robotics, electronics and STEM sessions. Guide students building projects with Arduino, sensors and microcontrollers, and encourage problem-solving through project-based learning.</p>
-        </li>
-        <li>
-          <span class="when">6-month internship</span>
-          <h3>Graphic design &amp; digital marketing <small>Phytozenix Pvt. Ltd.</small></h3>
-          <p>Hands-on work in graphic design, digital marketing and creative content development.</p>
-        </li>
-        <li>
-          <span class="when">Ongoing</span>
-          <h3>Freelance graphic designer</h3>
-          <p>Custom posters, banners and logos for clients.</p>
-        </li>
-      </ol>
-    </section>
+        <p class="muted">Different rooms, one habit: make something real and show how it works.</p>
+        <ol class="roles">
+          <li class="on">
+            <span class="badge" aria-hidden="true">ATL</span>
+            <div><h3>Teaching hands-on robotics.</h3><p>ATL Facilitator &middot; JNV Chirang (NITI Aayog)</p><p class="sub">Arduino, sensors and project-based learning for students.</p></div>
+            <time>Jul 2026 &ndash; present</time>
+          </li>
+          <li>
+            <span class="badge" aria-hidden="true">PZ</span>
+            <div><h3>Design and digital marketing.</h3><p>Intern &middot; Phytozenix Pvt. Ltd.</p><p class="sub">Graphic design, digital marketing and creative content.</p></div>
+            <time>6 months</time>
+          </li>
+          <li>
+            <span class="badge" aria-hidden="true">FL</span>
+            <div><h3>Brands that look the part.</h3><p>Freelance graphic designer</p><p class="sub">Custom posters, banners and logos for clients.</p></div>
+            <time>Ongoing</time>
+          </li>
+        </ol>
+      </section>
+    </div>
 
-    <section class="tile skills" aria-labelledby="skills-h">
-      <header>
-        <p class="eyebrow">Toolkit</p>
-        <h2 id="skills-h">What I work with</h2>
-      </header>
-      <div class="skill-cols">
-        <div>
-          <h3>Skills</h3>
-          <ul class="chips">
-            <li>Graphic design</li><li>Figma (UI/UX)</li><li>MS Office</li><li>Google Analytics</li><li>GEO-data sharing</li><li>Cybersecurity</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Build</h3>
-          <ul class="chips">
-            <li>Python</li><li>Flask</li><li>React</li><li>React Native</li><li>TypeScript</li><li>Arduino</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Education</h3>
-          <ul class="edu">
-            <li><strong>B.Tech, CSE</strong><span>Regional Institute of Science and Technology, Meghalaya &middot; 2023&ndash;2026</span></li>
-            <li><strong>Diploma, CSE</strong><span>Nalbari Polytechnic &middot; 2020&ndash;2023</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="heading">
+      <h2>What I bring to the table.</h2>
+      <p class="muted">Skills, tools and the education behind them.</p>
+    </div>
 
-    <section class="tile contact" id="contact" aria-labelledby="contact-h">
-      <p class="eyebrow">Contact</p>
-      <h2 id="contact-h">Got something to build or teach?</h2>
-      <p class="lead">Tell me about it. An idea is enough to start.</p>
-      <div class="actions">
-        <a class="btn" href="mailto:justbul.work@gmail.com">justbul.work@gmail.com</a>
-        <a class="btn btn-ghost" href="https://github.com/Just-Bul" target="_blank" rel="noopener noreferrer">GitHub<span class="sr"> (opens in a new tab)</span></a>
+    <div class="row r4" id="toolkit">
+      <div class="cards">
+        <section class="tile card c-sun"><p class="eyebrow">Skills</p><h3>Design &amp; analytics</h3><p>Graphic design, Figma (UI/UX), Google Analytics, MS Office.</p></section>
+        <section class="tile card c-leaf"><p class="eyebrow">Build</p><h3>Full stack &amp; AI</h3><p>Python, Flask, React, React Native, TypeScript, Arduino.</p></section>
+        <section class="tile card c-sky"><p class="eyebrow">Interests</p><h3>Security &amp; geo-data</h3><p>Cybersecurity and GEO-data sharing, from classroom to field.</p></section>
       </div>
-    </section>
+      <section class="tile list" aria-label="Education">
+        <div class="item"><div><h3>B.Tech, Computer Science &amp; Engineering</h3><p>Regional Institute of Science and Technology, Meghalaya</p></div><span>2023&ndash;2026</span></div>
+        <div class="item"><div><h3>Diploma, Computer Science &amp; Engineering</h3><p>Nalbari Polytechnic</p></div><span>2020&ndash;2023</span></div>
+        <div class="item"><div><h3>Atal Tinkering Lab, JNV Chirang</h3><p>Where the day job happens: robotics, electronics and STEM.</p></div><span>Now</span></div>
+        <div class="item"><div><h3>Open to freelance projects</h3><p>Design, web and AI. Send a message.</p></div><a class="go" href="#contact" aria-label="Go to contact"><svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      </section>
+    </div>
+
+    <div class="row r5" id="contact">
+      <section class="tile ask" aria-labelledby="ask-h">
+        <h2 id="ask-h">What should we make next?</h2>
+        <p class="muted">Bring the idea you keep coming back to. Let&rsquo;s see where a conversation takes it.</p>
+        <p class="mail"><a href="mailto:justbul.work@gmail.com">justbul.work@gmail.com</a>
+          <button class="icon-btn" id="copy" type="button" aria-label="Copy email address"><svg class="ic"><use href="#i-copy"/></svg></button><span id="copied" class="sr" role="status"></span></p>
+      </section>
+      <section class="tile say">
+        <img src="assets/rakibul-1.png" width="1050" height="1400" alt="" loading="lazy">
+        <div class="say-copy">
+          <h3>An idea is enough.</h3>
+          <a class="pill pill-dark" href="mailto:justbul.work@gmail.com?subject=Hello%20Rakibul">Say hello <svg class="ic"><use href="#i-ne"/></svg></a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="tile foot">
-    <p>&copy; <span id="yr">2026</span> Rakibul Islam. Built by hand, no frameworks.</p>
-    <a href="#home">Back to top &uarr;</a>
+    <div class="foot-id"><p class="big">Rakibul Islam</p><p class="muted">Still learning, still building.</p></div>
+    <nav class="foot-links" aria-label="Footer links">
+      <a href="https://github.com/Just-Bul" target="_blank" rel="noopener noreferrer">GitHub <svg class="ic"><use href="#i-ne"/></svg><span class="sr">(opens in a new tab)</span></a>
+      <a href="mailto:justbul.work@gmail.com">Email <svg class="ic"><use href="#i-ne"/></svg></a>
+      <a href="https://reportude.in" target="_blank" rel="noopener noreferrer">Reportude <svg class="ic"><use href="#i-ne"/></svg><span class="sr">(opens in a new tab)</span></a>
+      <a href="#home">Back to top <svg class="ic"><use href="#i-up"/></svg></a>
+    </nav>
+    <p class="copy">&copy; <span id="yr">2026</span> Rakibul Islam</p>
   </footer>
 </div>
 
 <nav class="dock" aria-label="Primary">
-  <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  <a href="#home" aria-label="Home"><svg class="ic"><use href="#i-home"/></svg></a>
+  <a href="#about" aria-label="About"><svg class="ic"><use href="#i-user"/></svg></a>
+  <a href="#projects" aria-label="Projects"><svg class="ic"><use href="#i-grid"/></svg></a>
+  <a href="#experience" aria-label="Experience"><svg class="ic"><use href="#i-case"/></svg></a>
+  <a href="#toolkit" aria-label="Toolkit"><svg class="ic"><use href="#i-book"/></svg></a>
+  <a href="#contact" aria-label="Contact"><svg class="ic"><use href="#i-mail"/></svg></a>
 </nav>
 <script src="script.js" defer></script>
 </body>
