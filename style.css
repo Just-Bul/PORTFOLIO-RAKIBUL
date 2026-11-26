@@ -248,3 +248,13 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
 .chip-ic { background: var(--acc); color: #111; }
 .tags li { background: #ffffff0f; border-color: #ffffff1f; color: #f6f1ea; }
 .card:hover { border-color: var(--acc); }
+
+/* KRISHX featured card: floating logo */
+.feat-logo { position: absolute; right: 6%; top: 50%; width: min(46%, 520px); transform: translateY(-50%); z-index: 1; animation: floaty 6s ease-in-out infinite; }
+.feat-logo::before { content: ""; position: absolute; inset: -30% -10%; background: radial-gradient(closest-side, #3fbf6a40, transparent 70%); z-index: -1; }
+.feat-logo img { width: 100%; height: auto; filter: drop-shadow(0 12px 40px #1d804288); }
+@keyframes floaty { 50% { transform: translateY(calc(-50% - 12px)); } }
+.feat-body h2.sr { position: absolute; }
+@media (max-width: 1099px) {
+  .feat-logo { position: relative; right: auto; top: auto; transform: none; width: min(80%, 360px); margin: 8px 0; animation: none; }
+}
