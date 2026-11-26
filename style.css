@@ -269,3 +269,10 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
 .featured { min-height: 480px; }
 .proj-head { justify-content: center; text-align: center; border-left: 1px solid var(--line); padding: 20px 28px; }
 .proj-head h2 { margin: 0; }
+
+/* highlighted border for the projects heading */
+.proj-head { border: 2px solid transparent; background: linear-gradient(var(--tile), var(--tile)) padding-box, linear-gradient(100deg, #ffd36b, #ffb020 30%, #ff9a1f 55%, #ffd36b) border-box; box-shadow: 0 0 0 4px #ffb02014, 0 8px 40px #ffb02026; gap: 20px; flex-wrap: nowrap; }
+.proj-head::before, .proj-head::after { content: ""; flex: 1; height: 2px; max-width: 220px; background: linear-gradient(90deg, transparent, var(--amber)); border-radius: 2px; }
+.proj-head::after { background: linear-gradient(270deg, transparent, var(--amber)); }
+.proj-head h2 { white-space: nowrap; }
+@media (max-width: 719px) { .proj-head::before, .proj-head::after { max-width: 40px; } .proj-head { gap: 12px; } }
