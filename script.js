@@ -5,7 +5,7 @@ $("yr").textContent = new Date().getFullYear();
 const root = document.documentElement;
 try { const t = localStorage.getItem("theme"); if (t) root.dataset.theme = t; } catch (e) {}
 $("theme").addEventListener("click", () => {
-  const dark = getComputedStyle(root).getPropertyValue("--bg").trim() === "#0c0b0a";
+  const dark = getComputedStyle(root).getPropertyValue("--bg").trim() === "#070707";
   root.dataset.theme = dark ? "light" : "dark";
   try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
 });

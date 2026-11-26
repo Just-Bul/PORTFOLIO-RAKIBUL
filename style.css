@@ -224,3 +224,16 @@ h3 { font-size: 20px; line-height: 1.25; font-weight: 600; }
 @media (max-width: 719px) { .mini-geo p:not(.eyebrow) { max-width: 22ch; } .mini-geo { min-height: 280px; } }
 .card { padding-top: 84px; min-height: 230px; }
 .chip-ic .ic { width: 22px; height: 22px; }
+
+/* page background: dark base, amber glows, blueprint grid */
+:root { --bg: #070707; --grid: #ffffff0a; --glow-a: #ffb02026; --glow-b: #3b82f61a; }
+:root[data-theme="light"] { --bg: #efeae2; --grid: #17130f0d; --glow-a: #ffb02040; --glow-b: #3b82f622; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg: #efeae2; --grid: #17130f0d; --glow-a: #ffb02040; --glow-b: #3b82f622; } }
+body { position: relative; background-color: var(--bg); }
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(900px 600px at 8% -5%, var(--glow-a), transparent 60%),
+    radial-gradient(800px 600px at 100% 40%, var(--glow-b), transparent 60%),
+    radial-gradient(700px 500px at 0% 100%, var(--glow-a), transparent 60%),
+    linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 48px 48px,
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 48px 48px; }
