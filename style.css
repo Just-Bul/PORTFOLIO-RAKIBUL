@@ -132,10 +132,18 @@ h3 { font-size: 20px; line-height: 1.25; font-weight: 600; }
 /* toolkit */
 .heading { display: grid; gap: 4px; padding: 24px 8px 4px; }
 .cards { display: grid; gap: var(--gap); }
-.card { display: grid; gap: 6px; align-content: end; min-height: 160px; color: var(--on-light); border-color: transparent; }
+.card { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 6px; justify-content: flex-end; min-height: 190px; color: var(--on-light); border-color: transparent; transition: transform .2s; }
+.card:hover { transform: translateY(-3px); }
 .card .eyebrow { color: #17130fa0; }
-.card p:not(.eyebrow) { font-size: 14px; color: #17130fc0; }
-.c-sun { background: var(--sun); } .c-leaf { background: var(--leaf); } .c-sky { background: var(--sky); }
+.card h3 { font-size: 24px; }
+.card > * { position: relative; }
+.card .art { position: absolute; right: -14px; top: -14px; width: 150px; height: 150px; fill: none; stroke: #17130f; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: .09; transform: rotate(-8deg); }
+.chip-ic { position: absolute; top: 22px; left: 22px; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: #17130f; color: #fff; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tags li { font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: #ffffffa6; border: 1px solid #17130f1f; }
+.c-sun { background: linear-gradient(150deg, #f8e6d0, #f0d2ae); }
+.c-leaf { background: linear-gradient(150deg, #e4f0da, #cfe3bf); }
+.c-sky { background: linear-gradient(150deg, #dde9f3, #c3d8ea); }
 .list { display: grid; align-content: stretch; padding: 8px 28px; }
 .item { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--line); }
 .item:last-child { border-bottom: 0; }
@@ -214,3 +222,5 @@ h3 { font-size: 20px; line-height: 1.25; font-weight: 600; }
 }
 .mini-geo p:not(.eyebrow) { max-width: 24ch; }
 @media (max-width: 719px) { .mini-geo p:not(.eyebrow) { max-width: 22ch; } .mini-geo { min-height: 280px; } }
+.card { padding-top: 84px; min-height: 230px; }
+.chip-ic .ic { width: 22px; height: 22px; }
