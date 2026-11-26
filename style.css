@@ -259,3 +259,11 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
   .feat-logo { position: relative; right: auto; top: auto; transform: none; width: min(80%, 360px); margin: 8px 0; animation: none; }
 }
 @media (min-width: 1100px) { .feat-logo { width: min(40%, 460px); right: 5%; } .feat-body { max-width: 380px; } }
+
+/* projects heading box */
+.proj-head { position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px; padding: 24px 28px; border-left: 4px solid var(--amber); }
+.proj-head h2 { font-size: clamp(28px, 3.2vw, 40px); margin-top: 4px; }
+.proj-head > p { max-width: 46ch; font-size: 14px; }
+.proj-head .count { font: 600 clamp(56px, 7vw, 96px)/1 var(--display); color: transparent; -webkit-text-stroke: 1px var(--amber); opacity: .6; }
+@media (max-width: 719px) { .proj-head .count { display: none; } }
+.featured { min-height: 480px; }
