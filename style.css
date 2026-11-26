@@ -237,3 +237,14 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
     radial-gradient(700px 500px at 0% 100%, var(--glow-a), transparent 60%),
     linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 48px 48px,
     linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 48px 48px; }
+
+/* toolkit cards: dark variants */
+.card { --acc: var(--amber); color: #f6f1ea; border: 1px solid #ffffff14; }
+.c-sun { --acc: #ffb020; background: radial-gradient(420px 220px at 100% 0%, #ffb02033, transparent 70%), linear-gradient(160deg, #1d1710, #121009); }
+.c-leaf { --acc: #7ddb7a; background: radial-gradient(420px 220px at 100% 0%, #7ddb7a2b, transparent 70%), linear-gradient(160deg, #121a11, #0c110b); }
+.c-sky { --acc: #5eb0ff; background: radial-gradient(420px 220px at 100% 0%, #5eb0ff2e, transparent 70%), linear-gradient(160deg, #0f1620, #0a0e14); }
+.card .eyebrow { color: var(--acc); }
+.card .art { stroke: var(--acc); opacity: .22; }
+.chip-ic { background: var(--acc); color: #111; }
+.tags li { background: #ffffff0f; border-color: #ffffff1f; color: #f6f1ea; }
+.card:hover { border-color: var(--acc); }
