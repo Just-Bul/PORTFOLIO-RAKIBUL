@@ -267,3 +267,5 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
 .proj-head .count { font: 600 clamp(56px, 7vw, 96px)/1 var(--display); color: transparent; -webkit-text-stroke: 1px var(--amber); opacity: .6; }
 @media (max-width: 719px) { .proj-head .count { display: none; } }
 .featured { min-height: 480px; }
+.proj-head { justify-content: center; text-align: center; border-left: 1px solid var(--line); padding: 20px 28px; }
+.proj-head h2 { margin: 0; }
