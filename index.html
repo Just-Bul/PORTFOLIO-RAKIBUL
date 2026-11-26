@@ -40,16 +40,28 @@
       </figure>
     </section>
 
-    <section class="tile now" aria-label="Current role">
+    <div class="stack">
+      <section class="tile now" aria-label="Current role">
       <p class="eyebrow">Right now</p>
       <h2>Teaching robotics at JNV Chirang</h2>
       <p>ATL Facilitator under NITI Aayog&rsquo;s Atal Tinkering Labs, helping students turn ideas into working circuits.</p>
       <ul class="chips"><li>Arduino</li><li>Sensors</li><li>STEM</li></ul>
-    </section>
+      </section>
 
-    <section class="tile place" aria-label="Location">
+      <section class="tile place" aria-label="Location">
       <div><p class="eyebrow">Based in</p><p class="big">Guwahati, Assam</p></div>
       <div><p class="eyebrow">Working hours</p><p class="big">IST, UTC+5:30</p></div>
+      </section>
+
+    </div>
+
+    <section class="tile game" aria-labelledby="game-h">
+      <div class="game-head">
+        <h2 id="game-h">For the tinkerers.</h2>
+        <p class="score" aria-live="polite">Score <b id="sc">0</b> &middot; Lives <b id="lv">3</b></p>
+      </div>
+      <canvas id="cv" width="640" height="360" role="img" aria-label="Circuit Catch game: slide the board to catch amber signals and dodge red shorts"></canvas>
+      <p class="muted small">Slide the board with your mouse, finger or arrow keys. Catch amber signals, dodge red shorts. <button class="btn btn-sm" id="play" type="button">Play</button></p>
     </section>
 
     <section class="projects" id="projects" aria-labelledby="projects-h">
