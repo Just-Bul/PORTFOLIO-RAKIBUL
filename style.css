@@ -333,3 +333,10 @@ html.lock { overflow: hidden; }
 .pm .pill-outline { color: var(--ink); border-color: var(--line); }
 @media (min-width: 860px) { .pm-body { grid-template-columns: 1.05fr 1fr; align-items: start; } .gallery img { max-height: 60vh; } }
 .pm:focus, .pm:focus-visible { outline: none; }
+
+/* social */
+.social { margin-top: 4px; }
+.social .pill { color: var(--ink); border-color: var(--line); }
+.social .pill:hover { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); border-color: transparent; color: #fff; }
+.lnk { display: inline-flex; align-items: center; gap: 10px; }
+.lnk .ic { width: 20px; height: 20px; }
