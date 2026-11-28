@@ -85,3 +85,21 @@ links.forEach((a) => { const s = document.querySelector(a.hash); if (s) io.obser
   });
   reset(); draw("Press Play");
 })();
+
+// project popups
+const root2 = document.documentElement;
+document.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => {
+  const d = $(b.dataset.open); d.showModal(); root2.classList.add("lock"); count(d);
+}));
+document.querySelectorAll("dialog.pm").forEach((d) => {
+  const g = d.querySelector(".gallery");
+  d.addEventListener("close", () => { root2.classList.remove("lock"); g.scrollLeft = 0; });
+  d.addEventListener("click", (e) => { if (e.target === d || e.target.closest("[data-close]")) d.close(); });
+  d.querySelector("[data-prev]").addEventListener("click", () => g.scrollBy({ left: -g.clientWidth }));
+  d.querySelector("[data-next]").addEventListener("click", () => g.scrollBy({ left: g.clientWidth }));
+  g.addEventListener("scroll", () => count(d), { passive: true });
+});
+function count(d) {
+  const g = d.querySelector(".gallery"), n = g.children.length;
+  d.querySelector(".gal-count").textContent = Math.min(n, Math.round(g.scrollLeft / g.clientWidth) + 1) + " / " + n;
+}
