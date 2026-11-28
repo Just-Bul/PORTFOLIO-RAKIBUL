@@ -276,3 +276,16 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
 .proj-head::after { background: linear-gradient(270deg, transparent, var(--amber)); }
 .proj-head h2 { white-space: nowrap; }
 @media (max-width: 719px) { .proj-head::before, .proj-head::after { max-width: 40px; } .proj-head { gap: 12px; } }
+
+/* Reportude card: brand-green, scrolling live-site preview */
+.mini-rep { position: relative; overflow: hidden; background: radial-gradient(360px 240px at 85% 10%, #b4f20a2e, transparent 70%), linear-gradient(160deg, #0d3a27, #06190f); border-color: #b4f20a33; color: #fff; }
+.mini-rep:hover { border-color: #b4f20a; }
+.mini-rep mark { background: #c6f432; color: #06190f; padding: 2px 8px; border-radius: 6px; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 1.9; }
+.mini-rep h3 mark { line-height: 1.5; }
+.mini-rep p:not(.eyebrow) { max-width: 24ch; }
+.mini-rep .corner { color: #c6f432; }
+.shot { position: absolute; right: -28px; top: 24px; width: 52%; height: 78%; border-radius: 14px; overflow: hidden; border: 1px solid #ffffff2e; box-shadow: 0 20px 50px #0009, 0 0 0 4px #ffffff0d; transform: rotate(5deg); }
+.shot img { width: 100%; height: auto; max-width: none; animation: pan 18s ease-in-out infinite alternate; }
+@keyframes pan { to { transform: translateY(calc(-100% + 230px)); } }
+.mini-rep > :not(.shot) { position: relative; z-index: 1; }
+@media (max-width: 719px) { .mini-rep { min-height: 300px; } .shot { width: 48%; } }
